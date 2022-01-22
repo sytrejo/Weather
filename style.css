@@ -1,0 +1,55 @@
+#information-section{
+    padding-top: 20px;
+}
+
+#wether-data{
+    background-color: #2492e0;
+}
+
+.current-city-data{
+    min-height: 300px;
+}
+
+.table-box{
+    background-color: #183b66;
+}
+
+tr{
+    margin: 7px;
+}
+
+.card{
+    background-color: #acc2e0;
+    margin: 5px;
+    min-height: 300px;
+}
+
+.header{
+    background: #6061b1;
+    background: -webkit-linear-gradient(
+        to right,
+        #acc2e0,
+        #6061b1,
+    );
+}
+
+.title{
+    color: #fff;
+    text-align: center;
+}
+
+#submit{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 599px){
+    .column{
+        margin: 2px;
+        padding: 0 20 px 0 20px
+    }
+
+    .card-content{
+        padding: 20px;
+    }
+}

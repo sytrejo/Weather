@@ -1,18 +1,21 @@
 
 $(document).ready(function (){
     // Get the current date and time
-let NowMoment = moment().format("l");
+    let NowMoment = moment().format("l");
+
+
+
 
 // add days for the 5 day forcast
-let day1 = moment().add(1,"days").format("l");
-let day2 = moment().add(2,"days").format("l");
-let day3 = moment().add(3,"days").format("l");
-let day4 = moment().add(4,"days").format("l");
-let day5 = moment().add(5,"days").format("l");
+    let day1 = moment().add(1,"days").format("l");
+    let day2 = moment().add(2,"days").format("l");
+    let day3 = moment().add(3,"days").format("l");
+    let day4 = moment().add(4,"days").format("l");
+    let day5 = moment().add(5,"days").format("l");
 
 //global variables
-let city;
-let cities;
+    let city;
+    let cities;
 
 //function to load most recently searched city from local storage
 function loadMostRecent(){
@@ -145,11 +148,11 @@ function search(){
             let icon4 = response.daily[4].weather[0].icon;
             let icon5 = response.daily[5].weather[0].icon;
 
-            $(#temp1).text("Temp (F): " + " " + day1temp.toFixed(1));
-            $(#temp2).text("Temp (F): " + " " + day2temp.toFixed(1));
-            $(#temp3).text("Temp (F): " + " " + day3temp.toFixed(1));
-            $(#temp4).text("Temp (F): " + " " + day4temp.toFixed(1));
-            $(#temp5).text("Temp (F): " + " " + day5temp.toFixed(1));
+            $("#temp1").text("Temp (F): " + " " + day1temp.toFixed(1));
+            $("#temp2").text("Temp (F): " + " " + day2temp.toFixed(1));
+            $("#temp3").text("Temp (F): " + " " + day3temp.toFixed(1));
+            $("#temp4").text("Temp (F): " + " " + day4temp.toFixed(1));
+            $("#temp5").text("Temp (F): " + " " + day5temp.toFixed(1));
 
             $("#hum1").text("Hum: " + " " + day1hum + "%");
             $("#hum2").text("Hum: " + " " + day2hum + "%");
